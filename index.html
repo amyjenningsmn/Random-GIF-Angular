@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="randomGifApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Gif Angular</title>
+    <script src = "angular.min.js"></script>
+    <script src = "app.js"></script>
+  </head>
+  <body ng-controller="CallController">
+
+    <button ng-click="getGifButton()">Get Me an Animal Gif!</button>
+
+    <div ng-show="buttonClicked">
+      <img ng-src="{{gif.image_url}}" />
+    </div>
+
+  </body>
+</html>
